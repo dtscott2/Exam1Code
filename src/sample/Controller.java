@@ -27,11 +27,11 @@ public class Controller {
 
     public void generateRandom(ActionEvent actionEvent) {
         Numbers one = new Numbers();
-        one.setMin(Integer.parseInt(minNumber.getText()));
-        one.setMax(Integer.parseInt(maxNumber.getText()));
-        one.genRandomNumber();
-        numberListView.getItems().add(one);
-        generatedNumber.setText(String.valueOf(one.genNum));
+        one.min = Integer.parseInt(minNumber.getText());
+        one.max = Integer.parseInt(maxNumber.getText());
+        String num = String.valueOf(one.genRandomNumber());
+        numberListView.getItems().add(num);
+        generatedNumber.setText(num);
 
 
 
