@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<GridPane alignment="center" hgap="10" prefHeight="386.0" prefWidth="473.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="483.0">
+         <children>
+            <Text layoutX="18.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Min:" />
+            <Text layoutX="16.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Max:" />
+            <Text layoutX="17.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generated Number:" />
+            <Text layoutX="66.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Random Number Generator and Storage" underline="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <ListView fx:id="numberListView" layoutX="255.0" layoutY="57.0" prefHeight="284.0" prefWidth="200.0" />
+            <Button layoutX="255.0" layoutY="356.0" mnemonicParsing="false" onAction="#loadData" text="Load" />
+            <Button layoutX="16.0" layoutY="141.0" mnemonicParsing="false" onAction="#generateRandom" text="Run" />
+            <Label fx:id="generatedNumber" layoutX="159.0" layoutY="201.0" prefHeight="17.0" prefWidth="59.0" text="Label" />
+            <TextField fx:id="minNumber" layoutX="87.0" layoutY="57.0" prefHeight="27.0" prefWidth="51.0" />
+            <TextField fx:id="maxNumber" layoutX="87.0" layoutY="97.0" prefHeight="27.0" prefWidth="51.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
